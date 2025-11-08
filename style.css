@@ -25,21 +25,21 @@ h4 {
 }
 
 header {
-    
+
     /* margin-top: 30px; */
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     /* backdrop-filter: blur(50px); */
     color: white;
     height: 50px;
     /* max-width: 1260px; */
     margin: auto;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     z-index: 1000;
     /* border-radius: 25px; */
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,13 +48,23 @@ header {
     /* width: 100%; */
     max-width: 1200px;
     margin: auto;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: white;
 }
 
 header .logo {
     font-family: "Orbitron", sans-serif;
     font-size: 25px;
     padding-left: 10px;
-    color: white;
+    background: linear-gradient(90deg, #237b0d, #fffb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: white; */
 
 }
 
@@ -169,7 +179,7 @@ header .nav-drop .fa-solid {
     background-position: center;
     background-size: cover;
     height: 600px;
-padding-top: 30px;
+    padding-top: 30px;
     /* width: 100vw; */
     /* max-width: 1260px; */
     margin: auto;
@@ -279,8 +289,8 @@ padding-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-     max-width: 1200px;
-     padding: 10px 20px;
+    max-width: 1200px;
+    padding: 10px 20px;
     /* background-color: blue; */
 }
 
@@ -335,7 +345,7 @@ padding-top: 30px;
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-     max-width: 1200px;
+    max-width: 1200px;
     /* background-color: blue; */
     padding: 0 20px;
 }
@@ -391,7 +401,7 @@ padding-top: 30px;
 
 }
 
-.flow-container{
+.flow-container {
     max-width: 1200px;
     /* background-color: blue; */
     padding: 10px 20px;
@@ -461,8 +471,8 @@ padding-top: 30px;
     margin: auto;
 }
 
-.we-do{
-     max-width: 1200px;
+.we-do {
+    max-width: 1200px;
     /* background-color: red; */
     margin: auto;
     padding: 10px 20px;
@@ -528,7 +538,7 @@ padding-top: 30px;
     /* background-color: green; */
 }
 
-#testimonials{
+#testimonials {
     max-width: 1200px;
     margin: auto;
     padding: 10px 20px;
@@ -655,7 +665,7 @@ padding-top: 30px;
     background-size: cover; */
     /* height: 100vh; */
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: rgba(128, 128, 128, 0.336);
 }
 
 #about h1 {
@@ -1055,7 +1065,7 @@ footer {
     /* max-width: 1260px; */
 }
 
-.foot{
+.foot {
     max-width: 1200px;
     margin: auto;
 
@@ -1090,8 +1100,14 @@ footer hr {
     margin: 13px auto;
 }
 
-footer h3,
-footer h1 {
+footer h1{
+      background: linear-gradient(90deg, #237b0d, #fffb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer h3 {
     color: #237b0d;
 }
 
